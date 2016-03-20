@@ -1,30 +1,31 @@
-$border-color: solid gray;
-$primaryColor: #FF0000;
-
 
 body {
-    h1 {
-      color: $primaryColor;
-    }
-    font-family: Verdana;
-    font-size: 1.5em;
+  font-family: Verdana;
+  font-size: 1.5em;
 }
 
 #team-members {
-clear: both;
-              &.member {
-                      float: left;
-                      border: 1px $border-color;
-                      margin: 10px;
-                      padding: 6px;
-              }
+  clear: both;
+}
 
-              &.member img {
-                      width: 200px;
-                      height: 200px;
-              }
+#team-members .member {
+  float: left;
+  border: 1px solid gray;
+  margin: 10px;
+  padding: 6px;
+}
 
-              &.member div.name {
-                      text-align: center;  
-              }
+#team-members .member img {
+  display: inline;
+  max-width: 200px;
+  max-height: 200px;
+  margin: 1em;
+}
+
+#team-members .member img:hover {
+  -webkit-filter: blur(5px)
+}
+
+#team-members .member div.name {
+  text-align: center;  
 }
